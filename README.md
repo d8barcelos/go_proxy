@@ -52,6 +52,7 @@ export BACKEND_LISTEN_ADDR=":8081"
 # Run the backend server
 go run main.go
 # Output: 🚀 starting backend server on :8081 (reporting as 8081)
+```
 
 Now, requests made to the reverse proxy (e.g., http://localhost:9000/some/path) will be forwarded to one of the healthy backend servers listed in TARGET_BACKEND_URLS.
 
